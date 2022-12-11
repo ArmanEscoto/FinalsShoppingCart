@@ -15,7 +15,7 @@
             $_SESSION['totalQuantity'] = 0;
 
             foreach($cartKeys as $index => $key) {
-                print_r($_SESSION['cartItems']);
+                ($_SESSION['cartItems']);
                 $_SESSION['cartItems'][$key][$cartColor[$index]] = $cartQuantities[$index];
                 $_SESSION['totalQuantity'] += $cartQuantities[$index];
             }
@@ -59,7 +59,7 @@
                                 <tr>
                                     <th scope="col-1"> </th>
                                     <th scope="col-3">Product</th>
-                                    <th scope="col-1">Size</th>
+                                    <th scope="col-1">Color</th>
                                     <th scope="col-2">Quantity</th>
                                     <th scope="col-2">Price</th>
                                     <th scope="col-2">Total</th>
